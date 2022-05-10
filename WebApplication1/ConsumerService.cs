@@ -33,10 +33,10 @@ namespace RabbitMQConsumer
             var factory = new ConnectionFactory
             {
 
-                HostName = "localhost" , 
-                Port = 5672
-                //HostName = Environment.GetEnvironmentVariable("RABBITMQ_HOST"),
-                //Port = Convert.ToInt32(Environment.GetEnvironmentVariable("RABBITMQ_PORT"))
+                //HostName = "localhost" , 
+                //Port = 5672
+                HostName = Environment.GetEnvironmentVariable("RABBITMQ_HOST"),
+                Port = Convert.ToInt32(Environment.GetEnvironmentVariable("RABBITMQ_PORT"))
 
             };
 
